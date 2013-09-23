@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Edge-sharpener by yesthatallen</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/yesthatallen/edge-sharpener">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Edge-sharpener</h1>
+            <h2>A tool to optimize how LightSpeed and AccountEdge work</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/yesthatallen/edge-sharpener/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/yesthatallen/edge-sharpener/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements:</h2>
+
+<h3>
+<a name="export-folder" class="anchor" href="#export-folder"><span class="octicon octicon-link"></span></a>Export Folder</h3>
+
+<p>Defining a certain folder where LightSpeed will save all 5 export files for a given session.</p>
+
+<h3>
+<a name="transfer-folder" class="anchor" href="#transfer-folder"><span class="octicon octicon-link"></span></a>Transfer Folder</h3>
+
+<p>A certain folder where the Edge Sharpener will save converted files.
+AccountEdge will import from this folder.</p>
+
+<h3>
+<a name="launchagent" class="anchor" href="#launchagent"><span class="octicon octicon-link"></span></a>LaunchAgent</h3>
+
+<p>A plist which watches the Export folder</p>
+
+<h3>
+<a name="edge-sharpener-script" class="anchor" href="#edge-sharpener-script"><span class="octicon octicon-link"></span></a>Edge Sharpener Script</h3>
+
+<p>The heart of this solution</p>
+
+<h2>
+<a name="optional-recommended" class="anchor" href="#optional-recommended"><span class="octicon octicon-link"></span></a>Optional, recommended</h2>
+
+<h3>
+<a name="dropbox-account" class="anchor" href="#dropbox-account"><span class="octicon octicon-link"></span></a>Dropbox account</h3>
+
+<p>It is frequently desired to have the imports happen on computer which is separate from the Export computer.
+In this case, having the Transfer Folder in a Dropbox account can be beneficial</p>
+
+<hr><h2>
+<a name="export-types" class="anchor" href="#export-types"><span class="octicon octicon-link"></span></a>Export types</h2>
+
+<p>There are five types of files exported by LightSpeed Pro:</p>
+
+<h3>
+<a name="inventory-adjustments" class="anchor" href="#inventory-adjustments"><span class="octicon octicon-link"></span></a>Inventory Adjustments</h3>
+
+<p>Memo re-organization for clarity &amp; easier sorting</p>
+
+<h3>
+<a name="miscellaneous-purchases" class="anchor" href="#miscellaneous-purchases"><span class="octicon octicon-link"></span></a>Miscellaneous Purchases</h3>
+
+<p>These transactions (which match LightSpeed Pro's Supplier Invoices) are simply transferred without modification.</p>
+
+<h3>
+<a name="payments" class="anchor" href="#payments"><span class="octicon octicon-link"></span></a>Payments</h3>
+
+<p>Rather than have payments show up as journal entries, which cannot be included on deposit slips, the Edge Sharpener solution converts all exported payments from LightSpeed Pro into proper received payments in AccountEdge. The Memo includes the Customer Name, as well as the document number on which the payment was taken.</p>
+
+<p>This allows for clearer delineation of payment types, and improved reporting.</p>
+
+<p>There is no current mechanism for ensuring Customers in LightSpeed Pro are synced with AccountEdge, so Edge Sharpener sets Payor for all payments is a single "Imported Payment" Payor.</p>
+
+<h3>
+<a name="sales" class="anchor" href="#sales"><span class="octicon octicon-link"></span></a>Sales</h3>
+
+<p>Memo re-organization for clarity &amp; easier sorting.</p>
+
+<h3>
+<a name="transfers" class="anchor" href="#transfers"><span class="octicon octicon-link"></span></a>Transfers</h3>
+
+<p>Memo re-organization for clarity &amp; easier sorting.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/yesthatallen">yesthatallen</a> can be found on <a href="https://github.com/yesthatallen/edge-sharpener">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
